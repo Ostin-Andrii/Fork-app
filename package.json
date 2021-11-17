@@ -5,11 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "node app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "eslint": "eslint",
+    "prettier": "prettier"
   },
   "repository": {
     "type": "git",
     "url": "git+https://gitlab.com/vadym.gorbachov/advansed-html-home-work-1-npm.git"
+  },
+  "prettier": {
+    "singleQuote": true
   },
   "author": "Vadym Gorbachov\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[.\u001b[g\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[v\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C@gmail.com",
   "license": "ISC",
@@ -25,7 +30,9 @@
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^5.1.1",
+    "eslint-plugin-unicorn": "^38.0.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
@@ -43,6 +50,7 @@
     "gulp-sass": "^5.0.0",
     "gulp-serve": "^1.4.0",
     "imagemin-webp": "^6.0.0",
+    "prettier": "^2.4.1",
     "prettier-eslint": "^13.0.0",
     "sass": "^1.43.4"
   }

@@ -76,3 +76,9 @@
  - [Работа в команде на Step проекте](https://dan-it.gitlab.io/fe-book/teamwork/step.html)
 
 #### Удачи!
+
+#### eslint
+
+Eslint work with prettier together
+For example command that will change code by rules in .eslint.json:  npm run eslint -- ./ --fix
+All eslint settings must be described in the readme.md file.
