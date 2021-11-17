@@ -77,4 +77,8 @@
 
 #### Удачи!
 
-#### npm run eslint -- ./ --fix - run eslint with new settings
+#### eslint
+
+Eslint work with prettier together
+For example command that will change code by rules in .eslint.json:  npm run eslint -- ./ --fix
+All eslint settings must be described in the readme.md file.
