@@ -76,3 +76,5 @@
  - [Работа в команде на Step проекте](https://dan-it.gitlab.io/fe-book/teamwork/step.html)
 
 #### Удачи!
+
+#### npm run eslint -- ./ --fix - run eslint with new settings
