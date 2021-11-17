@@ -1,0 +1,49 @@
+{
+  "name": "project-x",
+  "version": "1.0.0",
+  "description": "advansed-html hw1-npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "node app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/vadym.gorbachov/advansed-html-home-work-1-npm.git"
+  },
+  "author": "Vadym Gorbachov\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[.\u001b[g\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[v\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/vadym.gorbachov/advansed-html-home-work-1-npm/issues"
+  },
+  "homepage": "https://gitlab.com/vadym.gorbachov/advansed-html-home-work-1-npm#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "del": "^6.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-dest-clean": "^0.5.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-js-minify": "0.0.3",
+    "gulp-livereload": "^4.0.2",
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-serve": "^1.4.0",
+    "imagemin-webp": "^6.0.0",
+    "prettier-eslint": "^13.0.0",
+    "sass": "^1.43.4"
+  }
+}
