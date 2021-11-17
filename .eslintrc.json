@@ -1,4 +1,8 @@
 {
+    "plugins": [
+        "prettier",
+        "unicorn"
+    ],
     "env": {
         "browser": true,
         "commonjs": true,
