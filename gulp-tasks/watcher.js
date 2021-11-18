@@ -7,7 +7,7 @@ const htmlProcessor = require('./html.processor');
 function watcher () {
   watch('./src/**/*.html').on('change', series(htmlProcessor.htmlProcessor, browserSync.reload));
   watch('./src/js/*.js').on('change', series(jsProcessor, browserSync.reload));
-  watch('./src/scss/*.scss').on('change', series(sassProcessor, browserSync.reload));
+  watch('./src/scss/**/*.scss').on('change', series(sassProcessor, browserSync.reload));
 }
 
 exports.watcher = watcher;

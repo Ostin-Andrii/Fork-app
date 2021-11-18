@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -54,15 +55,143 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .test {
   font-family: Montserrat;
 }
 
-.page-header {
+.background {
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(../img/main-image.png);
-  background-size: 100%;
-  background-repeat: round;
-  background-attachment: fixed;
+  /* Firefox 3.6+ */
+  /* Safari 3.1+ и Chrome 4.0+ */
+  /* Opera 9.6+ */
+  background-size: cover;
+  /* Современные браузеры */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 718px;
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background: #27262a;
+}
+
+.nav__menu-button-list {
+  display: flex;
+}
+@media (min-width: 768px) {
+  .nav__menu-button-list {
+    display: none;
+  }
+}
+
+.nav__menu-item {
+  display: flex;
+}
+
+.nav__drop-menu {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100%;
+  width: 85%;
+  padding-left: 5%;
+}
+
+.nav__drop-menu-item {
+  background: #333333;
+  padding-top: 29px;
+  padding-bottom: 21px;
+}
+
+.nav__drop-menu-link {
+  position: relative;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 26px;
+  margin-left: 35px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 6px 14px 8px 30px;
+  text-decoration: none;
+  color: #fff;
+}
+.nav__drop-menu-link:hover {
+  color: #8D81AC;
+  cursor: pointer;
+}
+.nav__drop-menu-link:hover:before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 53px;
+  background: #8D81AC;
+  left: -34px;
+  top: -10px;
+}
+
+.logo {
+  margin-left: 16px;
+  display: flex;
+}
+
+.logo__picture {
+  display: flex;
+  align-items: center;
+}
+
+.logo__company-name {
+  display: none;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-left: 17px;
+  color: #8D81AC;
+  align-self: center;
+}
+
+.menu {
+  display: none;
+}
+
+.menu__item-link {
+  color: blue;
+}
+
+.buy-now-button {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 15px;
+  align-self: center;
+  background: #8D81AC;
+  padding: 8px 25px 10px 25px;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.drop-menu-button {
+  margin-right: 16px;
 }
 
 .editor {
@@ -139,11 +268,135 @@ table {
   font-family: Montserrat;
 }
 
-.page-header {
+.background {
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(../img/main-image.png);
-  background-size: 100%;
-  background-repeat: round;
-  background-attachment: fixed;
+  /* Firefox 3.6+ */
+  /* Safari 3.1+ и Chrome 4.0+ */
+  /* Opera 9.6+ */
+  background-size: cover;
+  /* Современные браузеры */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 718px;
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background: #27262a;
+}
+
+.nav__menu-button-list {
+  display: flex;
+}
+@media (min-width: 768px) {
+  .nav__menu-button-list {
+    display: none;
+  }
+}
+
+.nav__menu-item {
+  display: flex;
+}
+
+.nav__drop-menu {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100%;
+  width: 85%;
+  padding-left: 5%;
+}
+
+.nav__drop-menu-item {
+  background: #333333;
+  padding-top: 29px;
+  padding-bottom: 21px;
+}
+
+.nav__drop-menu-link {
+  position: relative;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 26px;
+  margin-left: 35px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 6px 14px 8px 30px;
+  text-decoration: none;
+  color: #fff;
+}
+.nav__drop-menu-link:hover {
+  color: #8D81AC;
+  cursor: pointer;
+}
+.nav__drop-menu-link:hover:before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 53px;
+  background: #8D81AC;
+  left: -34px;
+  top: -10px;
+}
+
+.logo {
+  margin-left: 16px;
+  display: flex;
+}
+
+.logo__picture {
+  display: flex;
+  align-items: center;
+}
+
+.logo__company-name {
+  display: none;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-left: 17px;
+  color: #8D81AC;
+  align-self: center;
+}
+
+.menu {
+  display: none;
+}
+
+.menu__item-link {
+  color: blue;
+}
+
+.buy-now-button {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 15px;
+  align-self: center;
+  background: #8D81AC;
+  padding: 8px 25px 10px 25px;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.drop-menu-button {
+  margin-right: 16px;
 }
 
 .editor {
@@ -258,4 +511,8 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
 }
