@@ -2,3 +2,14 @@
 .test {
   font-family: Montserrat;
 }
+
+.page-header {
+  //background-image: url(../dist/img/main-image.webp);
+  background-image: url(../img/main-image.png);
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  background-repeat:round;
+  background-attachment: fixed;
+}
