@@ -1,1 +1,261 @@
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before{content:"";content:none}q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}@font-face{font-family:"Montserrat Alternates";font-style:normal;font-weight:400;src:url(../fonts/Montserrat/Montserrat-Regular.ttf)}@font-face{font-family:"Montserrat Alternates";font-style:normal;font-weight:700;src:url(../fonts/Montserrat/Montserrat-Bold.ttf)}.test{font-family:Montserrat}.editor{text-align:center}.editor__h{color:#635c73;width:85%}.editor__p{margin-top:27px;color:#323232}.github-notif-button{display:flex}.github-source{display:flex}.github-button-wrapper{font-size:14px;font-weight:500;border:1px solid;height:26px;width:100px;border-radius:6px;background-color:#686767;text-align:center;justify-content:center;display:flex;align-items:center}.github-button-with-count{width:100%;height:100%;text-align:center;justify-content:center;display:flex;align-items:center;border-top-right-radius:0;border-bottom-right-radius:0}.github-count-number{border-radius:6px;border-top-left-radius:0;border-bottom-left-radius:0;width:100%;height:100%;background-color:#fff;text-align:center;justify-content:center;display:flex;align-items:center}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before{content:"";content:none}q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.test {
+  font-family: Montserrat;
+}
+
+.page-header {
+  background-image: url(../img/main-image.png);
+  background-size: 100%;
+  background-repeat: round;
+  background-attachment: fixed;
+}
+
+.editor {
+  text-align: center;
+}
+.editor__h {
+  color: #635C73;
+  width: 85%;
+}
+.editor__p {
+  margin-top: 27px;
+  color: #323232;
+}
+
+.github-notif-button {
+  display: flex;
+}
+
+.github-source {
+  display: flex;
+}
+
+.github-button-wrapper {
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid;
+  height: 26px;
+  width: 100px;
+  border-radius: 6px;
+  background-color: #686767;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.github-button-with-count {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.github-count-number {
+  border-radius: 6px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+}
+.test {
+  font-family: Montserrat;
+}
+
+.page-header {
+  background-image: url(../img/main-image.png);
+  background-size: 100%;
+  background-repeat: round;
+  background-attachment: fixed;
+}
+
+.editor {
+  text-align: center;
+}
+.editor__h {
+  color: #635C73;
+  width: 85%;
+}
+.editor__p {
+  margin-top: 27px;
+  color: #323232;
+}
+
+.github-notif-button {
+  display: flex;
+}
+
+.github-source {
+  display: flex;
+}
+
+.github-button-wrapper {
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid;
+  height: 26px;
+  width: 100px;
+  border-radius: 6px;
+  background-color: #686767;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.github-button-with-count {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.github-count-number {
+  border-radius: 6px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

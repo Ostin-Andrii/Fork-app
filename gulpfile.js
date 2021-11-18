@@ -10,6 +10,7 @@ const del = require('./gulp-tasks/delete.dest.js');
 const watcher = require('./gulp-tasks/watcher.js');
 const svgProcessor = require('./gulp-tasks/svg.processor.js');
 const htmlProcessor = require('./gulp-tasks/html.processor');
+const imageProcessor = require('./gulp-tasks/image.processor');
 
 exports.build = series(
   del.delDestionation,
@@ -26,14 +27,11 @@ exports.dev = parallel(
 
 exports.default = series(
   del.delDestionation,
-  parallel(
-    scssProcessor.sassProcessor,
-    jsProcessor.jsProcessor,
-    svgProcessor.svgProcessor,
-    htmlProcessor.htmlProcessor,
-    serv.serv
-  ),
-  series(
-    watcher.watcher
-  )
+  scssProcessor.sassProcessor,
+  jsProcessor.jsProcessor,
+  svgProcessor.svgProcessor,
+  imageProcessor.imageProcessor,
+  htmlProcessor.htmlProcessor,
+  serv.serv,
+  watcher.watcher
 );
