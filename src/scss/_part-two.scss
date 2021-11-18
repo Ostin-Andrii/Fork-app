@@ -1,0 +1,99 @@
+.editor {
+  text-align: center;
+
+  &__h {
+    color: #635C73;
+    width: 85%;
+  }
+
+  &__p{
+    margin-top: 27px;
+    color: #323232;
+
+  }
+}
+
+.github-notif-button {
+  display: flex;
+}
+
+.github-source {
+  display: flex;
+}
+
+//ширина, высота, бэкграунд, бордер радиус
+.github-button-wrapper{
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid;
+  height: 26px;
+  width: 100px;
+  border-radius: 6px;
+  background-color: #686767;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.github-button-with-count {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.github-count-number {
+  border-radius: 6px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center
+}
+
+
+
+// star, fork -> 2 отдельных класса для внутр эл-ов; у цифр сделать бэкграунд белым, отцентровать содержимое (al-it:cent, just-cont:cent, display: flex)
+// bradius (border-top-right-radius: 0; border-bottom-right-radius: 0;) и аналогично правую часть (левая часть по 0) + задать бордер
+// убрать бордер для внешнего гитхаб врепера и поставить 2 на левую и правую части.
+
+
+
+
+
+
+
+
+
+
+// .github-button {
+//     box-sizing: border-box;
+//     display: flex;
+//     text-align: center;
+//     background-color: #9c9c9c;
+//     border-radius:6px;
+//     border: 1px solid rgb(27 31 36 / 15%);
+//     float: left;
+//     border-top-right-radius: 0;
+//     border-bottom-right-radius: 0;
+// }
+
+// .github-button__text{
+//     display: flex;
+//     position: relative;
+//     float: left;
+//     padding: 3px 12px;
+//     font-size: 12px;
+//     font-weight: 600;
+//     line-height: 20px;
+//     vertical-align: middle;
+// }
