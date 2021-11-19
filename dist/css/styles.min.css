@@ -89,32 +89,20 @@ a {
   background: #27262a;
 }
 
-.nav__menu-button-list {
-  display: flex;
-}
-@media (min-width: 768px) {
-  .nav__menu-button-list {
-    display: none;
-  }
-}
-
 .nav__menu-item {
   display: flex;
 }
 
 .nav__drop-menu {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
   top: 100%;
-  width: 85%;
-  padding-left: 5%;
+  right: 15px;
+  width: 292px;
 }
 
 .nav__drop-menu-item {
   background: #333333;
-  padding-top: 29px;
-  padding-bottom: 21px;
+  height: 100%;
 }
 
 .nav__drop-menu-link {
@@ -128,7 +116,8 @@ a {
   display: block;
   height: 100%;
   width: 100%;
-  padding: 6px 14px 8px 30px;
+  padding-top: 29px;
+  padding-bottom: 21px;
   text-decoration: none;
   color: #fff;
 }
@@ -143,7 +132,7 @@ a {
   height: 53px;
   background: #8D81AC;
   left: -34px;
-  top: -10px;
+  top: 16px;
 }
 
 .logo {
@@ -294,32 +283,20 @@ a {
   background: #27262a;
 }
 
-.nav__menu-button-list {
-  display: flex;
-}
-@media (min-width: 768px) {
-  .nav__menu-button-list {
-    display: none;
-  }
-}
-
 .nav__menu-item {
   display: flex;
 }
 
 .nav__drop-menu {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
   top: 100%;
-  width: 85%;
-  padding-left: 5%;
+  right: 15px;
+  width: 292px;
 }
 
 .nav__drop-menu-item {
   background: #333333;
-  padding-top: 29px;
-  padding-bottom: 21px;
+  height: 100%;
 }
 
 .nav__drop-menu-link {
@@ -333,7 +310,8 @@ a {
   display: block;
   height: 100%;
   width: 100%;
-  padding: 6px 14px 8px 30px;
+  padding-top: 29px;
+  padding-bottom: 21px;
   text-decoration: none;
   color: #fff;
 }
@@ -348,7 +326,7 @@ a {
   height: 53px;
   background: #8D81AC;
   left: -34px;
-  top: -10px;
+  top: 16px;
 }
 
 .logo {

@@ -31,31 +31,25 @@
 //background: $menuBackground-transparent;
 }
 
-.nav__menu-button-list{
-  display: flex;
-
-  @media (min-width: $width-768) {
-    display: none;
-  }
-}
-
 .nav__menu-item {
   display: flex;
 }
 
 .nav__drop-menu {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
+  //margin-left: auto;
+  //margin-right: auto;
   top: 100%;
-  width: 85%;
-  padding-left: 5%;
+  right: 15px;
+  //width: 88%;
+  width: 292px;
+  //padding-left: 6%;
 }
 
 .nav__drop-menu-item {
   background: $dropMenuBackground;
-  padding-top: 29px;
-  padding-bottom: 21px;
+
+  height: 100%;
 }
 
 .nav__drop-menu-link {
@@ -70,7 +64,9 @@
   display: block;
   height: 100%;
   width: 100%;
-  padding: 6px 14px 8px 30px;
+  //padding: 6px 14px 8px 30px;
+  padding-top: 29px;
+  padding-bottom: 21px;
   text-decoration: none;
   color: #fff;
 
@@ -94,7 +90,7 @@
       height: 53px;
       background: $lightAcсentColor;
       left: -34px;
-      top: -10px;
+      top: 16px;
     }
   }
 }
