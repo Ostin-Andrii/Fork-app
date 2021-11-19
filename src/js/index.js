@@ -1,5 +1,4 @@
-const menuButton = document.querySelector('.head-menu-button');
-console.log(menuButton);
+const menuButton = document.querySelector('.drop-menu-button');
 const dropMenu = document.querySelector('.nav__drop-menu');
 dropMenu.hidden = true;
 menuButton.addEventListener('click', toggleMenu);
