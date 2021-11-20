@@ -1,5 +1,11 @@
 @import "variables";
 
+.page__body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
 .background {
   margin-left: auto;
   margin-right: auto;
@@ -15,6 +21,7 @@
 }
 
 .header {
+  max-width: 1200px;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
@@ -93,13 +100,26 @@
 
 .logo {
   margin-left: 16px;
-display: flex;
+  display: flex;
+
+  @media (min-width: $width-1024) {
+    margin-left: 50px;
+  }
+
+  @media (min-width: $width-1200) {
+    margin-left: 90px;
+  }
 }
 
 .logo__picture {
   //margin-left: 16px;
   display: flex;
   align-items: center;
+  fill: red;
+}
+
+.logo__picture-use {
+  fill: red;
 }
 
 .logo__company-name {
@@ -117,18 +137,35 @@ display: flex;
   @media (min-width: $width-640) {
     display: block;
   }
+
+  @media (min-width: $width-640) {
+    display: block;
+  }
 }
 
 .menu {
   display: none;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 47px;
 
   @media (min-width: $width-640) {
     order: 4;
     display: flex;
-    justify-content: center;
-    gap: 47px;
     margin-top: 30px;
+  }
+
+  @media (min-width: $width-1024) {
+    order: 0;
+    display: flex;
+    width: auto;
+    margin-top: 0;
+    margin-left: 40px;
+  }
+
+  @media (min-width: $width-1200) {
+    margin-left: 135px;
   }
 }
 
@@ -156,6 +193,14 @@ display: flex;
 
   @media (min-width: $width-640) {
     margin-right: 20px;
+  }
+
+  @media (min-width: $width-1024) {
+    margin-right: 50px;
+  }
+
+  @media (min-width: $width-1200) {
+    margin-right: 90px;
   }
 }
 

@@ -17,8 +17,10 @@ function toggleMenu (e) {
 }
 
 function hideMenu (e) {
-  if (e.target != menuButton &&
-  e.target != dropMenu) {
+  if (e.target !== menuButton &&
+  e.target !== dropMenu &&
+  !e.target.classList.contains('nav__drop-menu-link')
+  ) {
     dropMenu.hidden = true;
     menuButton.classList.add('active');
     menuButton.src = menuButton.src.replace('button-close', 'button');
