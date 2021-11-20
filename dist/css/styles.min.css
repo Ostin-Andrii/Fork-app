@@ -66,7 +66,7 @@ a {
   position: relative;
 }
 
-.background {
+.background__title {
   margin-left: auto;
   margin-right: auto;
   background-image: url(../img/main-image.png);
@@ -77,7 +77,7 @@ a {
   /* Современные браузеры */
   background-repeat: no-repeat;
   background-position: center;
-  height: 718px;
+  height: 768px;
 }
 
 .header {
@@ -299,7 +299,7 @@ a {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  top: 18%;
+  top: 200px;
   left: 50%;
   transform: translate(-50%);
   white-space: nowrap;
@@ -312,12 +312,12 @@ a {
 }
 @media (min-width: 640px) {
   .title {
-    top: 23.5%;
+    top: 229px;
   }
 }
 @media (min-width: 1024px) {
   .title {
-    top: 16%;
+    top: 175px;
     font-size: 82px;
     line-height: 82px;
   }
@@ -325,7 +325,7 @@ a {
 
 .title__slogan {
   position: absolute;
-  top: 25%;
+  top: 262px;
   left: 50%;
   transform: translate(-50%);
   min-width: 250px;
@@ -342,12 +342,12 @@ a {
   .title__slogan {
     white-space: nowrap;
     font-family: Lato;
-    top: 29.5%;
+    top: 282px;
   }
 }
 @media (min-width: 1024px) {
   .title__slogan {
-    top: 27%;
+    top: 275px;
     font-size: 30px;
     line-height: 30px;
   }
@@ -355,7 +355,7 @@ a {
 
 .title__specification {
   position: absolute;
-  top: 32%;
+  top: 325px;
   left: 50%;
   transform: translate(-50%);
   white-space: nowrap;
@@ -370,12 +370,12 @@ a {
 @media (min-width: 640px) {
   .title__specification {
     white-space: nowrap;
-    top: 33.5%;
+    top: 322px;
   }
 }
 @media (min-width: 1024px) {
   .title__specification {
-    top: 33%;
+    top: 322px;
     font-size: 16px;
     line-height: 16px;
   }
@@ -483,6 +483,20 @@ a {
   align-items: center;
 }
 
+.background__about-us {
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/background_);
+  /* Firefox 3.6+ */
+  /* Safari 3.1+ и Chrome 4.0+ */
+  /* Opera 9.6+ */
+  background-size: cover;
+  /* Современные браузеры */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 768px;
+}
+
 @font-face {
   font-family: "Montserrat Alternates";
   font-style: normal;
@@ -502,7 +516,7 @@ a {
   position: relative;
 }
 
-.background {
+.background__title {
   margin-left: auto;
   margin-right: auto;
   background-image: url(../img/main-image.png);
@@ -513,7 +527,7 @@ a {
   /* Современные браузеры */
   background-repeat: no-repeat;
   background-position: center;
-  height: 718px;
+  height: 768px;
 }
 
 .header {
@@ -735,7 +749,7 @@ a {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  top: 18%;
+  top: 200px;
   left: 50%;
   transform: translate(-50%);
   white-space: nowrap;
@@ -748,12 +762,12 @@ a {
 }
 @media (min-width: 640px) {
   .title {
-    top: 23.5%;
+    top: 229px;
   }
 }
 @media (min-width: 1024px) {
   .title {
-    top: 16%;
+    top: 175px;
     font-size: 82px;
     line-height: 82px;
   }
@@ -761,7 +775,7 @@ a {
 
 .title__slogan {
   position: absolute;
-  top: 25%;
+  top: 262px;
   left: 50%;
   transform: translate(-50%);
   min-width: 250px;
@@ -778,12 +792,12 @@ a {
   .title__slogan {
     white-space: nowrap;
     font-family: Lato;
-    top: 29.5%;
+    top: 282px;
   }
 }
 @media (min-width: 1024px) {
   .title__slogan {
-    top: 27%;
+    top: 275px;
     font-size: 30px;
     line-height: 30px;
   }
@@ -791,7 +805,7 @@ a {
 
 .title__specification {
   position: absolute;
-  top: 32%;
+  top: 325px;
   left: 50%;
   transform: translate(-50%);
   white-space: nowrap;
@@ -806,12 +820,12 @@ a {
 @media (min-width: 640px) {
   .title__specification {
     white-space: nowrap;
-    top: 33.5%;
+    top: 322px;
   }
 }
 @media (min-width: 1024px) {
   .title__specification {
-    top: 33%;
+    top: 322px;
     font-size: 16px;
     line-height: 16px;
   }
@@ -859,6 +873,20 @@ a {
   font-size: 14px;
   line-height: 14px;
   color: #848E97;
+}
+
+.background__about-us {
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/background_);
+  /* Firefox 3.6+ */
+  /* Safari 3.1+ и Chrome 4.0+ */
+  /* Opera 9.6+ */
+  background-size: cover;
+  /* Современные браузеры */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 768px;
 }
 
 .editor {
