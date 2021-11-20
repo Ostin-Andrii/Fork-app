@@ -2,13 +2,13 @@
   text-align: center;
 
   &__h {
-    color: #635C73;
+    color: $darkAccentColor;
     width: 85%;
   }
 
   &__p{
     margin-top: 27px;
-    color: #323232;
+    color: $darkGray;
 
   }
 }
