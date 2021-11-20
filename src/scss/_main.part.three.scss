@@ -1,7 +1,9 @@
+@import "variables";
+
 .background__about-us {
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../img/background_);
+  margin-top: 12px;
+  background-image: url(../img/background_about_us_big.jpg);
+  //background-image: url(../img/background_about_us_second.jpg);
   -moz-background-size: cover; /* Firefox 3.6+ */
   -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
   -o-background-size: cover; /* Opera 9.6+ */
@@ -9,5 +11,103 @@
   background-repeat: no-repeat;
   //background-attachment: fixed;
   background-position: center;
-  height: 768px;
+  height: 1610px;
+  padding-top: 57px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+
+  @media (min-width: $width-640) {
+
+  }
+
+  @media (min-width: $width-768) {
+    background-image: url(../img/background_about_us.png);
+    height: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $width-910) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $width-1200) {
+    padding-left: 81px;
+    padding-right: 81px;
+  }
 }
+
+.title-about-us {
+  display: block;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #fff;
+
+  @media (min-width: $width-640) {
+    font-size: 42px;
+    line-height: 44px;
+  }
+
+  @media (min-width: $width-1024) {
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
+.feedback__container {
+  margin-top: 85px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feedback__item {
+
+  //@media (min-width: $width-640) {
+  //  max-width: 290px;
+  //}
+
+  @media (min-width: $width-768) {
+    max-width: 350px;
+  }
+
+  @media (min-width: $width-910) {
+    max-width: 295px;
+  }
+}
+
+.feedback__logo {
+  margin-bottom: 33px;
+}
+
+.feedback__feedback {
+  display: block;
+  font-family: Lato;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 45px;
+}
+
+.feedback__conclusion {
+  text-align: center;
+  display: block;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: $mediumAccentColor;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+

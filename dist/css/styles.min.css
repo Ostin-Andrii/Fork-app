@@ -67,8 +67,6 @@ a {
 }
 
 .background__title {
-  margin-left: auto;
-  margin-right: auto;
   background-image: url(../img/main-image.png);
   /* Firefox 3.6+ */
   /* Safari 3.1+ и Chrome 4.0+ */
@@ -484,9 +482,8 @@ a {
 }
 
 .background__about-us {
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../img/background_);
+  margin-top: 12px;
+  background-image: url(../img/background_about_us_big.jpg);
   /* Firefox 3.6+ */
   /* Safari 3.1+ и Chrome 4.0+ */
   /* Opera 9.6+ */
@@ -494,7 +491,100 @@ a {
   /* Современные браузеры */
   background-repeat: no-repeat;
   background-position: center;
-  height: 768px;
+  height: 1610px;
+  padding-top: 57px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .background__about-us {
+    background-image: url(../img/background_about_us.png);
+    height: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (min-width: 910px) {
+  .background__about-us {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .background__about-us {
+    padding-left: 81px;
+    padding-right: 81px;
+  }
+}
+
+.title-about-us {
+  display: block;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #fff;
+}
+@media (min-width: 640px) {
+  .title-about-us {
+    font-size: 42px;
+    line-height: 44px;
+  }
+}
+@media (min-width: 1024px) {
+  .title-about-us {
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
+.feedback__container {
+  margin-top: 85px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .feedback__item {
+    max-width: 350px;
+  }
+}
+@media (min-width: 910px) {
+  .feedback__item {
+    max-width: 295px;
+  }
+}
+
+.feedback__logo {
+  margin-bottom: 33px;
+}
+
+.feedback__feedback {
+  display: block;
+  font-family: Lato;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 45px;
+}
+
+.feedback__conclusion {
+  text-align: center;
+  display: block;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #A291A5;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 @font-face {
@@ -517,8 +607,6 @@ a {
 }
 
 .background__title {
-  margin-left: auto;
-  margin-right: auto;
   background-image: url(../img/main-image.png);
   /* Firefox 3.6+ */
   /* Safari 3.1+ и Chrome 4.0+ */
@@ -876,9 +964,8 @@ a {
 }
 
 .background__about-us {
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../img/background_);
+  margin-top: 12px;
+  background-image: url(../img/background_about_us_big.jpg);
   /* Firefox 3.6+ */
   /* Safari 3.1+ и Chrome 4.0+ */
   /* Opera 9.6+ */
@@ -886,7 +973,100 @@ a {
   /* Современные браузеры */
   background-repeat: no-repeat;
   background-position: center;
-  height: 768px;
+  height: 1610px;
+  padding-top: 57px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .background__about-us {
+    background-image: url(../img/background_about_us.png);
+    height: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (min-width: 910px) {
+  .background__about-us {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .background__about-us {
+    padding-left: 81px;
+    padding-right: 81px;
+  }
+}
+
+.title-about-us {
+  display: block;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #fff;
+}
+@media (min-width: 640px) {
+  .title-about-us {
+    font-size: 42px;
+    line-height: 44px;
+  }
+}
+@media (min-width: 1024px) {
+  .title-about-us {
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
+.feedback__container {
+  margin-top: 85px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .feedback__item {
+    max-width: 350px;
+  }
+}
+@media (min-width: 910px) {
+  .feedback__item {
+    max-width: 295px;
+  }
+}
+
+.feedback__logo {
+  margin-bottom: 33px;
+}
+
+.feedback__feedback {
+  display: block;
+  font-family: Lato;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 45px;
+}
+
+.feedback__conclusion {
+  text-align: center;
+  display: block;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #A291A5;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .editor {
