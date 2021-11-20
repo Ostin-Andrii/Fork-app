@@ -5,8 +5,8 @@ const serv = (cb) => {
     server: {
       baseDir: './'
     },
-    // browser: "firefox",
-    // open: true
+    browser: 'firefox',
+    open: true
   });
   browserSync.watch('build', browserSync.reload);
   cb();
