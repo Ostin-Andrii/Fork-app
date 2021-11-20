@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.background {
+.background__title {
   margin-left: auto;
   margin-right: auto;
   background-image: url(../img/main-image.png);
@@ -18,7 +18,8 @@
   background-repeat: no-repeat;
   //background-attachment: fixed;
   background-position: center;
-  height: 718px;
+  //height: 718px;
+  height: 768px;
 }
 
 .header {
@@ -259,7 +260,7 @@ display: block;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  top: 18%;
+  top: 200px;
   left:50%;
   transform:translate(-50%);
   white-space: nowrap;
@@ -272,11 +273,11 @@ display: block;
   color: #fff;
 
   @media (min-width: $width-640) {
-    top: 23.5%
+    top: 229px;
   }
 
   @media (min-width: $width-1024) {
-    top: 16%;
+    top: 175px;
     font-size: 82px;
     line-height: 82px;
   }
@@ -284,7 +285,7 @@ display: block;
 
 .title__slogan {
   position: absolute;
-  top: 25%;
+  top: 262px;
   left:50%;
   transform:translate(-50%);
   min-width: 250px;
@@ -300,11 +301,11 @@ display: block;
   @media (min-width: $width-640) {
     white-space: nowrap;
     font-family: Lato;
-    top: 29.5%;
+    top: 282px;
   }
 
   @media (min-width: $width-1024) {
-    top: 27%;
+    top: 275px;
     font-size: 30px;
     line-height: 30px;
   }
@@ -312,7 +313,7 @@ display: block;
 
 .title__specification {
   position: absolute;
-  top: 32%;
+  top: 325px;
   left:50%;
   transform:translate(-50%);
   white-space: nowrap;
@@ -326,11 +327,11 @@ display: block;
 
   @media (min-width: $width-640) {
     white-space: nowrap;
-    top: 33.5%;
+    top: 322px;
   }
 
   @media (min-width: $width-1024) {
-    top: 33%;
+    top: 322px;
     font-size: 16px;
     line-height: 16px;
   }
@@ -338,7 +339,7 @@ display: block;
 
 .download-trial-button {
   position: absolute;
-  top: 690px;
+  top: 740px;
   left:50%;
   transform:translate(-50%);
   background: $lightAcсentColor;
