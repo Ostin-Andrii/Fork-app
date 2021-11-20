@@ -63,6 +63,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
+  position: relative;
 }
 
 .background {
@@ -80,6 +81,7 @@ a {
 }
 
 .header {
+  z-index: 2;
   max-width: 1200px;
   flex-wrap: wrap;
   margin-left: auto;
@@ -91,6 +93,11 @@ a {
   justify-content: space-between;
   position: fixed;
   background: #27262a;
+}
+@media (min-width: 1024px) {
+  .header {
+    background: #000;
+  }
 }
 
 .nav__menu-item {
@@ -146,6 +153,11 @@ a {
 @media (min-width: 1024px) {
   .logo {
     margin-left: 50px;
+  }
+}
+@media (min-width: 1100px) {
+  .logo {
+    margin-left: 70px;
   }
 }
 @media (min-width: 1200px) {
@@ -253,6 +265,11 @@ a {
     margin-right: 50px;
   }
 }
+@media (min-width: 1100px) {
+  .buy-now-button {
+    margin-right: 70px;
+  }
+}
 @media (min-width: 1200px) {
   .buy-now-button {
     margin-right: 90px;
@@ -275,6 +292,137 @@ a {
   .drop-menu-button__link-container {
     display: none;
   }
+}
+
+.title {
+  display: inline-block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%);
+  white-space: nowrap;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 44px;
+  color: #fff;
+}
+@media (min-width: 640px) {
+  .title {
+    top: 23.5%;
+  }
+}
+@media (min-width: 1024px) {
+  .title {
+    top: 16%;
+    font-size: 82px;
+    line-height: 82px;
+  }
+}
+
+.title__slogan {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%);
+  min-width: 250px;
+  text-align: center;
+  font-weight: 400;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #8D81AC;
+}
+@media (min-width: 640px) {
+  .title__slogan {
+    white-space: nowrap;
+    font-family: Lato;
+    top: 29.5%;
+  }
+}
+@media (min-width: 1024px) {
+  .title__slogan {
+    top: 27%;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.title__specification {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%);
+  white-space: nowrap;
+  font-weight: 400;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #848E97;
+}
+@media (min-width: 640px) {
+  .title__specification {
+    white-space: nowrap;
+    top: 33.5%;
+  }
+}
+@media (min-width: 1024px) {
+  .title__specification {
+    top: 33%;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.download-trial-button {
+  position: absolute;
+  top: 690px;
+  left: 50%;
+  transform: translate(-50%);
+  background: #8D81AC;
+  padding: 15px 33px 17px 33px;
+  border-radius: 29px;
+  white-space: nowrap;
+  font-weight: 700;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+}
+.download-trial-button:hover {
+  background: #fff;
+  color: #8D81AC;
+  border: 2px solid #8D81AC;
+}
+@media (min-width: 640px) {
+  .download-trial-button {
+    padding: 15px 61px 17px 61px;
+    font-size: 21px;
+    line-height: 23px;
+  }
+}
+
+.trial-condition {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 42px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #848E97;
 }
 
 .editor {
@@ -351,6 +499,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
+  position: relative;
 }
 
 .background {
@@ -368,6 +517,7 @@ a {
 }
 
 .header {
+  z-index: 2;
   max-width: 1200px;
   flex-wrap: wrap;
   margin-left: auto;
@@ -379,6 +529,11 @@ a {
   justify-content: space-between;
   position: fixed;
   background: #27262a;
+}
+@media (min-width: 1024px) {
+  .header {
+    background: #000;
+  }
 }
 
 .nav__menu-item {
@@ -434,6 +589,11 @@ a {
 @media (min-width: 1024px) {
   .logo {
     margin-left: 50px;
+  }
+}
+@media (min-width: 1100px) {
+  .logo {
+    margin-left: 70px;
   }
 }
 @media (min-width: 1200px) {
@@ -541,6 +701,11 @@ a {
     margin-right: 50px;
   }
 }
+@media (min-width: 1100px) {
+  .buy-now-button {
+    margin-right: 70px;
+  }
+}
 @media (min-width: 1200px) {
   .buy-now-button {
     margin-right: 90px;
@@ -563,6 +728,137 @@ a {
   .drop-menu-button__link-container {
     display: none;
   }
+}
+
+.title {
+  display: inline-block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%);
+  white-space: nowrap;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 44px;
+  color: #fff;
+}
+@media (min-width: 640px) {
+  .title {
+    top: 23.5%;
+  }
+}
+@media (min-width: 1024px) {
+  .title {
+    top: 16%;
+    font-size: 82px;
+    line-height: 82px;
+  }
+}
+
+.title__slogan {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%);
+  min-width: 250px;
+  text-align: center;
+  font-weight: 400;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #8D81AC;
+}
+@media (min-width: 640px) {
+  .title__slogan {
+    white-space: nowrap;
+    font-family: Lato;
+    top: 29.5%;
+  }
+}
+@media (min-width: 1024px) {
+  .title__slogan {
+    top: 27%;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.title__specification {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%);
+  white-space: nowrap;
+  font-weight: 400;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #848E97;
+}
+@media (min-width: 640px) {
+  .title__specification {
+    white-space: nowrap;
+    top: 33.5%;
+  }
+}
+@media (min-width: 1024px) {
+  .title__specification {
+    top: 33%;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.download-trial-button {
+  position: absolute;
+  top: 690px;
+  left: 50%;
+  transform: translate(-50%);
+  background: #8D81AC;
+  padding: 15px 33px 17px 33px;
+  border-radius: 29px;
+  white-space: nowrap;
+  font-weight: 700;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+}
+.download-trial-button:hover {
+  background: #fff;
+  color: #8D81AC;
+  border: 2px solid #8D81AC;
+}
+@media (min-width: 640px) {
+  .download-trial-button {
+    padding: 15px 61px 17px 61px;
+    font-size: 21px;
+    line-height: 23px;
+  }
+}
+
+.trial-condition {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 42px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #848E97;
 }
 
 .editor {
