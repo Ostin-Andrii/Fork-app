@@ -59,6 +59,12 @@ a {
   text-decoration: none;
 }
 
+.page__body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
 .background {
   margin-left: auto;
   margin-right: auto;
@@ -74,6 +80,7 @@ a {
 }
 
 .header {
+  max-width: 1200px;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
@@ -136,10 +143,25 @@ a {
   margin-left: 16px;
   display: flex;
 }
+@media (min-width: 1024px) {
+  .logo {
+    margin-left: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .logo {
+    margin-left: 90px;
+  }
+}
 
 .logo__picture {
   display: flex;
   align-items: center;
+  fill: red;
+}
+
+.logo__picture-use {
+  fill: red;
 }
 
 .logo__company-name {
@@ -159,18 +181,38 @@ a {
     display: block;
   }
 }
+@media (min-width: 640px) {
+  .logo__company-name {
+    display: block;
+  }
+}
 
 .menu {
   display: none;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 47px;
 }
 @media (min-width: 640px) {
   .menu {
     order: 4;
     display: flex;
-    justify-content: center;
-    gap: 47px;
     margin-top: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .menu {
+    order: 0;
+    display: flex;
+    width: auto;
+    margin-top: 0;
+    margin-left: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .menu {
+    margin-left: 135px;
   }
 }
 
@@ -199,6 +241,16 @@ a {
 @media (min-width: 640px) {
   .buy-now-button {
     margin-right: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .buy-now-button {
+    margin-right: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .buy-now-button {
+    margin-right: 90px;
   }
 }
 
@@ -290,6 +342,12 @@ a {
   font-weight: 700;
   src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
 }
+.page__body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
 .background {
   margin-left: auto;
   margin-right: auto;
@@ -305,6 +363,7 @@ a {
 }
 
 .header {
+  max-width: 1200px;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
@@ -367,10 +426,25 @@ a {
   margin-left: 16px;
   display: flex;
 }
+@media (min-width: 1024px) {
+  .logo {
+    margin-left: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .logo {
+    margin-left: 90px;
+  }
+}
 
 .logo__picture {
   display: flex;
   align-items: center;
+  fill: red;
+}
+
+.logo__picture-use {
+  fill: red;
 }
 
 .logo__company-name {
@@ -390,18 +464,38 @@ a {
     display: block;
   }
 }
+@media (min-width: 640px) {
+  .logo__company-name {
+    display: block;
+  }
+}
 
 .menu {
   display: none;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 47px;
 }
 @media (min-width: 640px) {
   .menu {
     order: 4;
     display: flex;
-    justify-content: center;
-    gap: 47px;
     margin-top: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .menu {
+    order: 0;
+    display: flex;
+    width: auto;
+    margin-top: 0;
+    margin-left: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .menu {
+    margin-left: 135px;
   }
 }
 
@@ -430,6 +524,16 @@ a {
 @media (min-width: 640px) {
   .buy-now-button {
     margin-right: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .buy-now-button {
+    margin-right: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .buy-now-button {
+    margin-right: 90px;
   }
 }
 
