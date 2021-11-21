@@ -2,40 +2,46 @@
 
 .background__about-us {
   margin-top: 12px;
-  background-image: url(../img/background_about_us_big.jpg);
-  //background-image: url(../img/background_about_us_second.jpg);
+  background-image: url(../img/background_about_us.jpg);
   -moz-background-size: cover; /* Firefox 3.6+ */
   -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
   -o-background-size: cover; /* Opera 9.6+ */
   background-size: cover; /* Современные браузеры */
   background-repeat: no-repeat;
-  //background-attachment: fixed;
   background-position: center;
-  height: 1610px;
-  padding-top: 57px;
+  height: 768px;
+  padding-top: 65px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
 
-  @media (min-width: $width-640) {
-
+  @media (min-width: $width-910) {
+    padding-left: 62px;
+    padding-right: 60px;
+    padding-top: 58px;
   }
+
+  @media (min-width: $width-1024) {
+    padding-top: 100px;
+  }
+}
+
+.additional-background {
+  background-image: url(../img/background_about_us_second.jpg);
+  -moz-background-size: cover; /* Firefox 3.6+ */
+  -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: cover; /* Opera 9.6+ */
+  background-size: cover; /* Современные браузеры */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 847px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
 
   @media (min-width: $width-768) {
-    background-image: url(../img/background_about_us.png);
-    height: 768px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  @media (min-width: $width-910) {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
-  @media (min-width: $width-1200) {
-    padding-left: 81px;
-    padding-right: 81px;
+  background-image: none;
+    height: 0px;
   }
 }
 
@@ -61,17 +67,35 @@
 }
 
 .feedback__container {
-  margin-top: 85px;
+  margin-top: 83px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (min-width: $width-1024) {
+    margin-top: 75px;
+  }
+
+  @media (min-width: $width-1024) {
+    margin-top: 90px;
+  }
 }
 
 .feedback__item {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 
   //@media (min-width: $width-640) {
   //  max-width: 290px;
   //}
+  @media (min-width: $width-480) {
+    max-width: 300px;
+  }
+
+  @media (min-width: $width-640) {
+    max-width: 350px;
+  }
 
   @media (min-width: $width-768) {
     max-width: 350px;
@@ -80,10 +104,18 @@
   @media (min-width: $width-910) {
     max-width: 295px;
   }
+
+  @media (min-width: $width-1024) {
+    max-width: 270px;
+  }
 }
 
 .feedback__logo {
-  margin-bottom: 33px;
+  margin-bottom: 26px;
+
+  @media (min-width: $width-1024) {
+    margin-bottom: 35px;
+  }
 }
 
 .feedback__feedback {
@@ -95,9 +127,38 @@
   line-height: 24px;
   color: #fff;
   margin-bottom: 45px;
+
+  @media (min-width: $width-360) {
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $width-480) {
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $width-576) {
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $width-640) {
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: $width-768) {
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: $width-910) {
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $width-1024) {
+    margin-bottom: 69px;
+  }
 }
 
 .feedback__conclusion {
+  position: relative;
   text-align: center;
   display: block;
   font-family: Lato;
@@ -109,5 +170,62 @@
   margin-left: 20px;
   margin-right: 20px;
 
+  &:after {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 115%;
+    content: '';
+    height: 2px;
+    width: 245px;
+    background: $feedbackLineColor;
+  }
+
+  @media (min-width: $width-360) {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:after{
+      width: 300px;
+    }
+  }
+
+  @media (min-width: $width-480) {
+    max-width: 380px;
+
+    &:after{
+      width: 380px;
+    }
+  }
+
+  @media (min-width: $width-576) {
+    max-width: 480px;
+
+    &:after{
+      width: 480px;
+    }
+  }
+
+  @media (min-width: $width-640) {
+    max-width: 480px;
+
+    &:after{
+      width: 480px;
+    }
+  }
+
+  @media (min-width: $width-640) {
+    max-width: 560px;
+
+    &:after{
+      width: 560px;
+    }
+  }
+
+  @media (min-width: $width-1024) {
+    margin-top: 15px;
+  }
 }
+
 
