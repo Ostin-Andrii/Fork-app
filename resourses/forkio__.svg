@@ -1,0 +1,20 @@
+              <svg width="300px" height="300px" viewBox="0px 0px 200px 200px" xmlns="http://www.w3.org/2000/svg" role="img" class="svg-inline--fa fa-facebook-f fa-w-10" data-icon="facebook-f" data-prefix="fab" focusable="false" aria-hidden="true">
+                <g>
+                  <title>Layer 1</title>
+                  <path id="svg_16" d="m138.652,411.826l-44.522,0c-3.069,0 -5.565,-2.497 -5.565,-5.565l0,-116.87c0,-4.429 -1.759,-8.675 -4.891,-11.805l-21.585,-21.586l21.586,-21.586c3.131,-3.13 4.89,-7.376 4.89,-11.805l0,-116.87c0,-3.069 2.497,-5.565 5.565,-5.565l44.522,0c9.22,0 16.696,-7.475 16.696,-16.696s-7.475,-16.696 -16.696,-16.696l-44.522,0c-21.481,0 -38.956,17.476 -38.956,38.957l0,109.954l-28.501,28.501c-6.52,6.519 -6.52,17.091 0,23.611l28.501,28.502l0,109.954c0,21.481 17.476,38.957 38.956,38.957l44.522,0c9.22,0 16.696,-7.475 16.696,-16.696s-7.475,-16.696 -16.696,-16.696z" fill="#8D81AC"/>
+                  <path id="svg_17" d="m490.327,244.195l-28.501,-28.502l0,-109.954c0,-21.481 -17.476,-38.957 -38.957,-38.957l-44.522,0c-9.22,0 -16.696,7.475 -16.696,16.696s7.475,16.696 16.696,16.696l44.522,0c3.069,0 5.565,2.497 5.565,5.565l0,116.87c0,4.429 1.759,8.675 4.891,11.805l21.586,21.586l-21.586,21.586c-3.131,3.13 -4.89,7.376 -4.89,11.805l0,116.87c0,3.069 -2.497,5.565 -5.565,5.565l-44.522,0c-9.22,0 -16.696,7.475 -16.696,16.696s7.475,16.696 16.696,16.696l44.522,0c21.481,0 38.957,-17.476 38.957,-38.957l0,-109.954l28.501,-28.501c6.519,-6.519 6.519,-17.091 -0.001,-23.611z" fill="#8D81AC"/>
+                  <g transform="matrix(1.49349 0 0 1.45521 -117.633 -107.438)" stroke="null" id="svg_113">
+                    <svg  stroke="null" id="svg_18" viewBox="0 0 550 400" y="83" x="42" height="400px" width="643px" xmlns="http://www.w3.org/2000/svg">
+                      <g stroke="null" id="svg_1" transform="rotate(5.5658 163.043 164.003)">
+                        <line stroke="#8D81AC" fill="none" x1="127.85294" y1="21.19607" x2="200.36067" y2="21.19607" id="svg_14" stroke-linejoin="undefined" stroke-linecap="undefined" stroke-width="19"/>
+                        <line stroke="#8D81AC" fill="none" x1="197.85294" y1="12.04901" x2="198.85294" y2="297.61764" id="svg_13" stroke-linejoin="undefined" stroke-linecap="undefined" stroke-width="19"/>
+                        <line stroke="#8D81AC" fill="none" stroke-width="19" x1="126.85294" y1="11.7843" x2="126.85294" y2="297.94117" id="svg_12" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+                        <line stroke="#8D81AC" fill="none" stroke-width="19" x1="123.85294" y1="293.79411" x2="197.85294" y2="292.79411" id="svg_11" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+                        <line stroke="#8D81AC" fill="none" stroke-width="19" x1="203.00153" y1="291.40606" x2="154.87346" y2="314.44686" id="svg_10" stroke-linejoin="undefined" stroke-linecap="undefined" transform="rotate(-4.3062 178.938 302.926)"/>
+                        <line stroke="#8D81AC" fill="none" stroke-width="19" x1="122.28676" y1="290.60293" x2="164.61764" y2="315.37499" id="svg_9" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+                        <line stroke="#8D81AC" fill="none" stroke-width="19" x1="124.85153" y1="62.0482" x2="197.97638" y2="62.6732" id="svg_2" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+                      </g>
+                    </svg>
+                  </g>
+                </g>
+              </svg>
