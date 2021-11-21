@@ -1,3 +1,38 @@
+.editor__h {
+  font-size: 26px;
+  line-height: 28px;
+  color: #635C73;
+  text-transform: uppercase;
+}
+
+.editor__p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+}
+
+.text_container {
+  padding: 0 25px;
+}
+
+.button_wrapper {
+  flex-wrap: wrap;
+  padding: 0 35px;
+  display:flex;
+  justify-content: center;
+}
+.button:last-child {
+  margin-top: 12px;
+}
+
+.button:nth-child(2n) {
+  margin-left: 5px;
+}
+
+.button {
+  width: 110px;
+}
+
 .editor {
   text-align: center;
 
@@ -17,13 +52,13 @@
   display: flex;
 }
 
-.github-source {
+.section_icons {
   display: flex;
 }
 
 //ширина, высота, бэкграунд, бордер радиус
 .github-button-wrapper{
-  font-size: 14px;
+  font-size: 14px; 
   font-weight: 500;
   border: 1px solid;
   height: 26px;
