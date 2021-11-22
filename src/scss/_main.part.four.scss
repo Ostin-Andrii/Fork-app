@@ -42,16 +42,13 @@
 }
 
 .price__item {
-    margin-bottom: 18px;
+    height: 457px;
     width: 257px;
 }
 
-.price__header {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+.price__item-accent{
+    width: 299px;
+    height: 560px;
 }
 
 .pricing__body {
@@ -59,7 +56,7 @@
     background-color: $pricingItemBackground;
 }
 
-.pricing__body-acent {
+.pricing__body-accent {
     height: 449px;
     background-color: $pricingItemBackgroundAccent;
 }
@@ -70,6 +67,7 @@
     justify-content: center;
     display: flex;
     text-align: center;
+    height: 257px;
     height: 97px;
     // width: 100%;
     color: #fff;
@@ -81,14 +79,14 @@
     background-color: $picingItemHeaderBeckground;
 }
 
-.price__header-acent {
+.price__header-accent {
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
     display: flex;
     text-align: center;
     height: 111px;
-    width: 257px;
+    width: 299px;
     color: #fff;
     font-family: Montserrat;
     font-style: normal;
@@ -96,6 +94,28 @@
     font-size: 24px;
     line-height: 24px;
     background-color: $picingItemHeaderBeckgroundAccent;
+}
+
+.price__price-accent {
+    width: 299px;
+    height: 78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 62px;
+
+    &:before {
+        content: '$';
+        font-weight: 300;
+    }
 }
 
 .price__price {
@@ -145,11 +165,39 @@
     }
 }
 
+.price__period-accent {
+    margin-top: 16px;
+    position: relative;
+    margin: 20px;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    height: 18px;
+    color: #fff;
+    text-transform: uppercase;
+
+    &::after {
+        left:50%;
+        transform:translate(-50%);
+        top: 56px;
+        position: absolute;
+        content: '';
+        height: 5px;
+        width: 60px;
+        background: $lightAcсentColor;
+    }
+}
+
 .price__type-license {
     margin-top: 91px;
-    height: 13px;
+    height: 44px;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 28px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -157,6 +205,20 @@
     justify-content: center;
     font-family: Montserrat;
     font-style: normal;
+}
+
+.price__type-license-accent {
+    margin-top: 91px;
+    display: flex;
+    height: 48px;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
 }
 
 .price__purchase-button {
@@ -171,38 +233,21 @@
     line-height: 15px;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 13px 38px 15px 38px;
+    padding: 13px 36px 14px 36px;
 }
 
-
-
-// .price__container:first-child{
-//     margin-top: 32px;
-// }
-// // .price__menu:nth-child(2n) {
-// //     margin-top: 18px;
-// // }
-
-// .main__3_price_text {
-//     font-size: 28px;
-//     line-height: 42px;
-//     align-items: center;
-//     text-align: center;
-//     color: #ffffff;
-// }
-
-// .pricing_header{
-//     width: 257px;
-//     width: 97px;  
-//     background-color: rgb(95, 95, 95);
-// }
-
-// .pricing_body{
-//     background-color: rgb(71, 71, 71);
-// }
-
-// .single-price {
-//     width: 33%;
-//     text-align: center;
-//     color: #fff;
-//   }
+.price__purchase-button-accent {
+   
+    display: inline-block;
+    background-color: $pricePurchaseButtonAccent;
+    color: #fff;
+    border-radius: 30px;
+    margin-top: 37px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 48px 19px 48px;
+}

@@ -1,136 +1,175 @@
 @import "variables";
 
-.editor__h {
-  font-size: 26px;
-  line-height: 28px;
-  color: #635C73;
-  text-transform: uppercase;
+
+.product {
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
-.editor__p {
+.product__title {
+  margin-top: 80px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 38px;
+  color: $darkAccentColor;
+}
+
+.product__description {
+  margin-top: 27px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: #323232;
+  max-width: 330px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.text_container {
-  padding: 0 25px;
-}
-
-.button_wrapper {
+.github-buttons__wrapper {
+  margin-top: 24px;
+  display: flex;
   flex-wrap: wrap;
-  padding: 0 35px;
-  display:flex;
   justify-content: center;
-}
-.button:last-child {
-  margin-top: 12px;
+  gap: 10px;
 }
 
-.button:nth-child(2n) {
-  margin-left: 5px;
-}
-
-.button {
-  width: 110px;
-}
-
-.editor {
-  text-align: center;
-
-  &__h {
-    color: $darkAccentColor;
-    width: 85%;
-  }
-
-  &__p{
-    margin-top: 27px;
-    color: $darkGray;
-
-  }
-}
-
-.github-notif-button {
+.github-buttons__item {
+  width: 118px;
   display: flex;
+  border: 1px solid #D5D5D5;
+  border-radius: 3px;
 }
 
-.section_icons {
+.github-buttons__button {
+  border-right: 1px solid #D5D5D5;
+  background-color: #f6f8fa;
   display: flex;
-}
-
-//ширина, высота, бэкграунд, бордер радиус
-.github-button-wrapper{
-  font-size: 14px; 
-  font-weight: 500;
-  border: 1px solid;
-  height: 26px;
-  width: 100px;
-  border-radius: 6px;
-  background-color: #686767;
-  text-align: center;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.github-buttons__actions-type {
+  padding-right: 12px;
+  margin-left: 3px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.octicon {
+  margin-left: 12px;
+  margin-right: 2px;
+}
+
+.github-buttons__counts{
+  font-size: 10px;
+  font-weight: 700;
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.github-button-with-count {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+.advantages__title {
+  display: block;
+  margin-top: 160px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 38px;
+  color: $lightAcсentColor;
 }
 
-.github-count-number {
-  border-radius: 6px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  text-align: center;
-  justify-content: center;
+.advantages__list {
   display: flex;
-  align-items: center
+  flex-wrap: wrap;
 }
 
+.advantages__item {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.advantages__image-container {
+  margin-top: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 116px;
+}
 
-// star, fork -> 2 отдельных класса для внутр эл-ов; у цифр сделать бэкграунд белым, отцентровать содержимое (al-it:cent, just-cont:cent, display: flex)
-// bradius (border-top-right-radius: 0; border-bottom-right-radius: 0;) и аналогично правую часть (левая часть по 0) + задать бордер
-// убрать бордер для внешнего гитхаб врепера и поставить 2 на левую и правую части.
+.advantages__image {
+  margin-left: 15px;
+  margin-right: 15px;
 
+  @media (min-width: $width-576) {
+    margin-left: 0px;
+  }
+}
 
+.advantages__description {
+  margin-top: 27px;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
 
+  @media (min-width: $width-576) {
+    margin-left: 20px;
+    max-width: 390px;
+  }
+}
 
+.advantages__description-title{
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 14px;
+  color: $darkGray; 
+  @media (min-width: $width-576) {
+    text-align: left;
+  }
+}
 
+.advantages__description-text {
+  display: block;
+  margin-top: 14px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: $basisGray;
 
+  @media (min-width: $width-576) {
+    text-align: left;
+    
+  }
 
+}
 
+.product__ide-picture-container{
+  margin-top: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
 
+.product__ide-picture {
+  margin-right: -112px;
 
-// .github-button {
-//     box-sizing: border-box;
-//     display: flex;
-//     text-align: center;
-//     background-color: #9c9c9c;
-//     border-radius:6px;
-//     border: 1px solid rgb(27 31 36 / 15%);
-//     float: left;
-//     border-top-right-radius: 0;
-//     border-bottom-right-radius: 0;
-// }
+  @media (min-width: $width-640) {
+    width: 562px;
+    height: 417px;
+  }
 
-// .github-button__text{
-//     display: flex;
-//     position: relative;
-//     float: left;
-//     padding: 3px 12px;
-//     font-size: 12px;
-//     font-weight: 600;
-//     line-height: 20px;
-//     vertical-align: middle;
-// }
+  @media (min-width: $width-480) {
+    margin-right: 0px;
+  }
+}
