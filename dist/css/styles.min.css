@@ -64,6 +64,7 @@ a {
   margin-right: auto;
   max-width: 1200px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .background__title {
@@ -1121,6 +1122,7 @@ a {
   margin-right: auto;
   max-width: 1200px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .background__title {
