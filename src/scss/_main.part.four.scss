@@ -1,0 +1,253 @@
+@import "variables";
+
+.pricing {
+    padding-left: 28px;
+    padding-right: 28px;
+    text-align: center;
+    background-color: $pricingBackground;
+    height: 2189px;
+    // background-image: url(../img/background_about_us_second.jpg);
+
+    @media (min-width: $width-640) {
+        height: 1319px;
+      }
+}
+
+.pricing__title{
+    margin-bottom: 32px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+    color: #fff;
+
+    @media (min-width: $width-480) {
+        font-size: 32px;
+        margin-bottom: 40px;
+      }
+
+      @media (min-width: $width-576) {
+        font-size: 36px;
+        margin-bottom: 50px;
+      }
+}
+
+.pricing__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.price__item {
+    height: 457px;
+    width: 257px;
+}
+
+.price__item-accent{
+    width: 299px;
+    height: 560px;
+}
+
+.pricing__body {
+    height: 360px;
+    background-color: $pricingItemBackground;
+}
+
+.pricing__body-accent {
+    height: 449px;
+    background-color: $pricingItemBackgroundAccent;
+}
+
+.price__header {
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    height: 257px;
+    height: 97px;
+    // width: 100%;
+    color: #fff;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    background-color: $picingItemHeaderBeckground;
+}
+
+.price__header-accent {
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    height: 111px;
+    width: 299px;
+    color: #fff;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    background-color: $picingItemHeaderBeckgroundAccent;
+}
+
+.price__price-accent {
+    width: 299px;
+    height: 78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 62px;
+
+    &:before {
+        content: '$';
+        font-weight: 300;
+    }
+}
+
+.price__price {
+    padding-top: 30px;
+    color:#fff;
+    height: 57px;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 62px;
+
+    &:before {
+        content: '$';
+        font-weight: 300;
+
+    }
+}
+
+.price__period {
+    position: relative;
+    margin: 20px;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    height: 18px;
+    color: #fff;
+    text-transform: uppercase;
+
+    &::after {
+        left:50%;
+        transform:translate(-50%);
+        top: 56px;
+        position: absolute;
+        content: '';
+        height: 5px;
+        width: 60px;
+        background: $lightAcсentColor;
+    }
+}
+
+.price__period-accent {
+    margin-top: 16px;
+    position: relative;
+    margin: 20px;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    height: 18px;
+    color: #fff;
+    text-transform: uppercase;
+
+    &::after {
+        left:50%;
+        transform:translate(-50%);
+        top: 56px;
+        position: absolute;
+        content: '';
+        height: 5px;
+        width: 60px;
+        background: $lightAcсentColor;
+    }
+}
+
+.price__type-license {
+    margin-top: 91px;
+    height: 44px;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+    font-family: Montserrat;
+    font-style: normal;
+}
+
+.price__type-license-accent {
+    margin-top: 91px;
+    display: flex;
+    height: 48px;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.price__purchase-button {
+    display: inline-block;
+    background-color: $pricingPurchaseButton;
+    color: #fff;
+    border-radius: 30px;
+    margin-top: 37px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 13px 36px 14px 36px;
+}
+
+.price__purchase-button-accent {
+   
+    display: inline-block;
+    background-color: $pricePurchaseButtonAccent;
+    color: #fff;
+    border-radius: 30px;
+    margin-top: 37px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 48px 19px 48px;
+}
