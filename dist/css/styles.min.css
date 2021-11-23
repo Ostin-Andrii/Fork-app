@@ -1080,16 +1080,28 @@ a {
 }
 
 @font-face {
-  font-family: "Montserrat Alternates";
+  font-family: "Montserrat Alternates, sans-serif";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
 }
 @font-face {
-  font-family: "Montserrat Alternates";
+  font-family: "Montserrat Alternates, sans-serif";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "Lato, sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Lato, sans-serif";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Lato/Lato-Regular.ttf");
 }
 .pricing {
   padding-left: 28px;
