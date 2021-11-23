@@ -1,0 +1,10 @@
+@mixin background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin block-center {
+  margin-left: auto;
+  margin-right: auto;
+}
