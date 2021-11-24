@@ -13,11 +13,17 @@
     }
 
     @media (min-width: $width-768) {
-        background-image: url(/src/img/background_subs_768px.png) 
+        background-image: url(/src/img/background_subs_768px.png);
+        padding: 0px;
+        overflow: hidden;
+        height: 800px;
+    }
+    @media (min-width: $width-1200) {
+        height: 800px;
     }
 }
 
-.pricing__title{
+.pricing__title { 
     margin-bottom: 32px;
     font-family: Montserrat;
     font-weight: 700;
@@ -28,12 +34,27 @@
     @media (min-width: $width-480) {
         font-size: 32px;
         margin-bottom: 40px;
-      }
+    }
 
-      @media (min-width: $width-576) {
+    @media (min-width: $width-576) {
         font-size: 36px;
         margin-bottom: 50px;
-      }
+    }
+
+    @media (min-width: $width-768) {
+        margin-top: 88px;
+        font-size: 42px;
+        line-height: 44px;
+        margin-bottom: 39px;
+    }
+
+
+    @media (min-width: $width-1200) {
+        font-size: 48px;
+        line-height: 50px;
+        margin-top: 75px;
+    }
+
 }
 
 .pricing__container {
@@ -48,6 +69,10 @@
 .price__item {
     height: 457px;
     width: 257px;
+
+    @media (min-width: $width-1200) {
+
+    }
 }
 
 .price__item-accent{

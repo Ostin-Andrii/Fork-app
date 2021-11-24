@@ -1038,6 +1038,14 @@ a {
 @media (min-width: 768px) {
   .pricing {
     background-image: url(/src/img/background_subs_768px.png);
+    padding: 0px;
+    overflow: hidden;
+    height: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .pricing {
+    height: 800px;
   }
 }
 
@@ -1061,6 +1069,21 @@ a {
     margin-bottom: 50px;
   }
 }
+@media (min-width: 768px) {
+  .pricing__title {
+    margin-top: 88px;
+    font-size: 42px;
+    line-height: 44px;
+    margin-bottom: 39px;
+  }
+}
+@media (min-width: 1200px) {
+  .pricing__title {
+    font-size: 48px;
+    line-height: 50px;
+    margin-top: 75px;
+  }
+}
 
 .pricing__container {
   display: flex;
@@ -1075,7 +1098,6 @@ a {
   height: 457px;
   width: 257px;
 }
-
 .price__item-accent {
   width: 299px;
   height: 560px;
@@ -1308,6 +1330,14 @@ a {
 @media (min-width: 768px) {
   .pricing {
     background-image: url(/src/img/background_subs_768px.png);
+    padding: 0px;
+    overflow: hidden;
+    height: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .pricing {
+    height: 800px;
   }
 }
 
@@ -1331,6 +1361,21 @@ a {
     margin-bottom: 50px;
   }
 }
+@media (min-width: 768px) {
+  .pricing__title {
+    margin-top: 88px;
+    font-size: 42px;
+    line-height: 44px;
+    margin-bottom: 39px;
+  }
+}
+@media (min-width: 1200px) {
+  .pricing__title {
+    font-size: 48px;
+    line-height: 50px;
+    margin-top: 75px;
+  }
+}
 
 .pricing__container {
   display: flex;
@@ -1345,7 +1390,6 @@ a {
   height: 457px;
   width: 257px;
 }
-
 .price__item-accent {
   width: 299px;
   height: 560px;
