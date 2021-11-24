@@ -318,7 +318,7 @@
 }
 
 .top{
-  @media (min-width: $width-360) {
+  @media (min-width: $width-320) {
     display: none;
   }
   @media (min-width: $width-1200) {
@@ -327,7 +327,7 @@
 }
 
 .bottom{
-  @media (min-width: $width-360){
+  @media (min-width: $width-320){
     display: flex;
   }
   @media (min-width: $width-1200){

@@ -763,7 +763,7 @@ a {
   }
 }
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .top {
     display: none;
   }
@@ -774,7 +774,7 @@ a {
   }
 }
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .bottom {
     display: flex;
   }
@@ -2539,7 +2539,7 @@ a {
   }
 }
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .top {
     display: none;
   }
@@ -2550,7 +2550,7 @@ a {
   }
 }
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .bottom {
     display: flex;
   }
