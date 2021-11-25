@@ -26,6 +26,7 @@
     font-size: 42px;
     line-height: 42px;
   } 
+
   @media (min-width: $width-1200) {
     margin-top: 66px;
     font-size: 54px;
@@ -71,6 +72,7 @@
   @media (min-width: $width-768) {
     margin-top: 24px;
   }
+
   @media (min-width: $width-1200) {
     margin-top: 13px;
   }
@@ -129,6 +131,7 @@
   @media (min-width: $width-576){
     max-width: 420px;
   }
+
   @media (min-width: $width-768) {
     max-width: 542px;
     font-size: 42px;
@@ -148,14 +151,6 @@
     display: flex;
 
   }
-  
-
-
-  // @media (min-width: $width-1200){
-  //   background-color: #F4F4F4;
-  //   width: 100%;
-  //   // margin-left: -25px;
-  // }  
 }
 
 .portfolio__wraper{
@@ -198,6 +193,7 @@
   @media (min-width: $width-910) {
     margin-right: 20px;
   }
+  
   @media (min-width: $width-1200) {
   //   background-color: #F4F4F4;
     margin-right: 0px;
@@ -218,7 +214,6 @@
 
   @media (min-width: $width-1200) {
     margin-right: 0px;
-
   }
 }
 
@@ -248,6 +243,7 @@
   line-height: 16px;
   margin-bottom: 14px;
   color: $darkGray; 
+
   @media (min-width: $width-576) {
     text-align: left;
   }
@@ -277,7 +273,6 @@
   
   @media (min-width: $width-1200) {
     max-width: 390px;
-
   }
 }
 
@@ -321,6 +316,7 @@
   @media (min-width: $width-320) {
     display: none;
   }
+
   @media (min-width: $width-1200) {
     display: flex;
   }
@@ -330,6 +326,7 @@
   @media (min-width: $width-320){
     display: flex;
   }
+  
   @media (min-width: $width-1200){
     display: none;
   }
