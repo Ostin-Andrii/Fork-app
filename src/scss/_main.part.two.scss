@@ -5,15 +5,32 @@
   text-align: center;
   padding-left: 25px;
   padding-right: 25px;
+
+  @media (min-width: $width-1200) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .product__title {
   margin-top: 80px;
   font-family: Montserrat;
   font-weight: 700;
-  font-size: 38px;
-  line-height: 38px;
+  font-size: 26px;
+  line-height: 28px;
   color: $darkAccentColor;
+  text-transform: uppercase;
+
+  @media (min-width: $width-768) {
+    margin-top: 93px;
+    font-size: 42px;
+    line-height: 42px;
+  } 
+  @media (min-width: $width-1200) {
+    margin-top: 66px;
+    font-size: 54px;
+    line-height: 54px;
+  } 
 }
 
 .product__description {
@@ -26,14 +43,37 @@
   max-width: 330px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $width-576) {
+    max-width: 470px;
+    margin-top: 33px;
+  }
+
+  @media (min-width: $width-768) {
+    max-width: 650px;
+    font-size: 21px;
+    line-height: 32px; 
+  }
+
+  @media (min-width: $width-1200) {
+    max-width: 820px;
+    margin-top: 35px;
+  }
 }
 
 .github-buttons__wrapper {
-  margin-top: 24px;
+  margin-top: 36px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+
+  @media (min-width: $width-768) {
+    margin-top: 24px;
+  }
+  @media (min-width: $width-1200) {
+    margin-top: 13px;
+  }
 }
 
 .github-buttons__item {
@@ -75,24 +115,77 @@
 }
 
 .advantages__title {
+  max-width: 230px;
   display: block;
+  margin: auto;
   margin-top: 160px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 38px;
+  font-size: 32px;
   line-height: 38px;
   color: $lightAcсentColor;
+
+  @media (min-width: $width-576){
+    max-width: 420px;
+  }
+  @media (min-width: $width-768) {
+    max-width: 542px;
+    font-size: 42px;
+    line-height: 44px;
+  } 
+
+  @media (min-width: $width-1200){
+    max-width: 612px;
+    font-size: 48px;
+    line-height: 50px;
+    margin-top: 120px;
+  }
+}
+
+.advantages__wrapper {
+  @media (min-width: $width-1200){
+    display: flex;
+
+  }
+  
+
+
+  // @media (min-width: $width-1200){
+  //   background-color: #F4F4F4;
+  //   width: 100%;
+  //   // margin-left: -25px;
+  // }  
+}
+
+.portfolio__wraper{
+  order: 2;
 }
 
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $width-910) {
+    margin-left: 70px;
+  }
+
+  @media (min-width: $width-1200) {
+    margin-left: 50px;
+    margin-top: 100px;
+  }
+  
 }
 
 .advantages__item {
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $width-1200) {
+    max-height: 120px;
+    padding-top: 0px;
+  }
+
 }
 
 .advantages__image-container {
@@ -100,14 +193,32 @@
   margin-left: auto;
   margin-right: auto;
   width: 116px;
+  display: flex;
+
+  @media (min-width: $width-910) {
+    margin-right: 20px;
+  }
+  @media (min-width: $width-1200) {
+  //   background-color: #F4F4F4;
+    margin-right: 0px;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .advantages__image {
   margin-left: 15px;
   margin-right: 15px;
+  display: block;
 
   @media (min-width: $width-576) {
     margin-left: 0px;
+  }
+
+  @media (min-width: $width-1200) {
+    margin-right: 0px;
+
   }
 }
 
@@ -119,7 +230,12 @@
 
   @media (min-width: $width-576) {
     margin-left: 20px;
-    max-width: 390px;
+    max-width: 390px;  
+  }
+
+  @media (min-width: $width-1200) {
+    margin-top: 20px;
+    max-height: 110px;
   }
 }
 
@@ -138,6 +254,8 @@
 }
 
 .advantages__description-text {
+  font-weight: 400;
+  font-family: Montserrat;
   display: block;
   margin-top: 14px;
   font-family: Lato;
@@ -149,9 +267,18 @@
 
   @media (min-width: $width-576) {
     text-align: left;
-    
   }
 
+  @media (min-width: $width-768) {
+    text-align: left;
+    width: 563px;
+    height: 35px;
+  }
+  
+  @media (min-width: $width-1200) {
+    max-width: 390px;
+
+  }
 }
 
 .product__ide-picture-container{
@@ -169,7 +296,41 @@
     height: 417px;
   }
 
+  @media (min-width: $width-768) {
+    width: 700px;
+    height: 519px;
+  }
+
   @media (min-width: $width-480) {
     margin-right: 0px;
+  }
+
+  @media (min-width: $width-910) {
+    width: 700px; 
+    height: 519px;
+  }
+  
+  @media (min-width: $width-1200) {
+    width: 570px;
+    height: 423px;
+  }
+
+}
+
+.top{
+  @media (min-width: $width-320) {
+    display: none;
+  }
+  @media (min-width: $width-1200) {
+    display: flex;
+  }
+}
+
+.bottom{
+  @media (min-width: $width-320){
+    display: flex;
+  }
+  @media (min-width: $width-1200){
+    display: none;
   }
 }
