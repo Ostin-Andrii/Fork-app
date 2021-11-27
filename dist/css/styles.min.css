@@ -1040,6 +1040,8 @@ a {
 @media (min-width: 768px) {
   .pricing {
     background-image: url(/src/img/background_subs_768px.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 0px;
     overflow: hidden;
     height: 1319px;
@@ -1380,6 +1382,8 @@ a {
 @media (min-width: 768px) {
   .pricing {
     background-image: url(/src/img/background_subs_768px.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 0px;
     overflow: hidden;
     height: 1319px;
