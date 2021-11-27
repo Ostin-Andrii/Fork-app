@@ -1,6 +1,7 @@
 @import "variables";
 
 .pricing {
+    padding: 0 10px 0 10px;
     padding-left: 28px;
     padding-right: 28px;
     text-align: center;
@@ -64,20 +65,78 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: $width-768) {
+        width: 768px;
+        margin: 0 auto;
+    }
+
+    @media (min-width: $width-1200) {
+        width: 1200px;
+        margin: 0;
+    }
 }
 
 .price__item {
     height: 457px;
     width: 257px;
+    margin: 0px 12px 0 12px;
+
+    @media (min-width: $width-320) {
+        &:nth-child(2n) {
+            margin-top: 18px;
+        }
+    }
+
+    @media (min-width: $width-640) {
+        &:nth-child(2n) {
+            margin-top: 0px;
+        }
+
+        &:nth-child(4n) {
+            margin-top: 0px;
+            margin-left: 24px;
+        }
+    }   
 
     @media (min-width: $width-1200) {
-
+        &:nth-child(4n) {
+            margin-left: 10px;
+        }
     }
+
+
 }
+
+
+
+
+    // @media (min-width: $width-576) {
+    //     &:nth-child(2n) {
+    //         margin-left: 25px;
+    //     }
+    // }
+    // @media (min-width: $width-1200) {
+
+    // }
 
 .price__item-accent{
     width: 299px;
     height: 560px;
+
+    @media (min-width: $width-320) {
+        margin-top: 18px;
+    }
+
+    @media (min-width: $width-640) {
+        margin-left: -30px;
+    }
+
+    @media (min-width: $width-1200) {
+        margin: 0 10px;
+    }
+
+
 }
 
 .pricing__body {
