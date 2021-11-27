@@ -1,3 +1,5 @@
+'use strict'
+
 const menuButton = document.querySelector('.drop-menu-button__image');
 const dropMenu = document.querySelector('.nav__drop-menu');
 dropMenu.hidden = true;
