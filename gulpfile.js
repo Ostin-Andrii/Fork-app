@@ -14,6 +14,7 @@ const imageProcessor = require('./gulp-tasks/image.processor');
 
 exports.build = series(
   del.delDestionation,
+  htmlProcessor.htmlProcessor,
   scssProcessor.sassProcessor,
   jsProcessor.jsProcessor,
   svgProcessor.svgProcessor,
@@ -27,10 +28,10 @@ exports.dev = parallel(
 
 exports.default = series(
   del.delDestionation,
+  imageProcessor.imageProcessor,
   scssProcessor.sassProcessor,
   jsProcessor.jsProcessor,
   svgProcessor.svgProcessor,
-  imageProcessor.imageProcessor,
   htmlProcessor.htmlProcessor,
   serv.serv,
   watcher.watcher

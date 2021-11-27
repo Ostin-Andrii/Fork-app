@@ -1,11 +1,10 @@
 @import "variables";
+@import "mixins";
 
 .background__about-us {
-  margin-top: 12px;
+  margin-top: 6px;
   background-image: url(../img/background_about_us.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  @include background;
   height: 768px;
   padding-top: 65px;
   padding-left: 20px;
@@ -25,15 +24,13 @@
 
 .additional-background {
   background-image: url(../img/background_about_us_second.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  @include background;
   height: 847px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
 
-  @media (min-width: $width-768) {
+  @media (min-width: $width-740) {
   background-image: none;
     height: 0px;
   }
@@ -63,8 +60,8 @@
 .feedback__container {
   margin-top: 83px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 
   @media (min-width: $width-1024) {
     margin-top: 75px;
@@ -77,12 +74,8 @@
 
 .feedback__item {
   max-width: 280px;
-  margin-left: auto;
-  margin-right: auto;
+  @include block-center;
 
-  //@media (min-width: $width-640) {
-  //  max-width: 290px;
-  //}
   @media (min-width: $width-480) {
     max-width: 300px;
   }
@@ -177,8 +170,7 @@
 
   @media (min-width: $width-360) {
     max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    @include block-center;
 
     &:after{
       width: 300px;

@@ -1,8 +1,8 @@
 @import "variables";
+@import "mixins";
 
 .page__body {
-  margin-left: auto;
-  margin-right: auto;
+  @include block-center;
   max-width: 1200px;
   position: relative;
   overflow-x: hidden;
@@ -10,14 +10,7 @@
 
 .background__title {
   background-image: url(../img/main-image.png);
-  -moz-background-size: cover; /* Firefox 3.6+ */
-  -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
-  -o-background-size: cover; /* Opera 9.6+ */
-  background-size: cover; /* Современные браузеры */
-  background-repeat: no-repeat;
-  //background-attachment: fixed;
-  background-position: center;
-  //height: 718px;
+  @include background;
   height: 768px;
 }
 
@@ -25,8 +18,7 @@
   z-index: 2;
   max-width: 1200px;
   flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
+  @include block-center;
   padding-top: 31px;
   padding-bottom: 31px;
   width: 100%;
@@ -34,7 +26,6 @@
   justify-content: space-between;
   position: fixed;
   background: $menuBackground;
-//background: $menuBackground-transparent;
 
   @media (min-width: $width-1024) {
     background: #000;
@@ -50,7 +41,6 @@
   top: 100%;
   right: 15px;
   width: 292px;
-  //padding-left: 6%;
 }
 
 .nav__drop-menu-item {
@@ -59,11 +49,9 @@
 }
 
 .nav__drop-menu-link {
-  //@include font-s11-lh22;
   position: relative;
   font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 26px;
   line-height: 26px;
   margin-left: 35px;
@@ -74,16 +62,6 @@
   padding-bottom: 21px;
   text-decoration: none;
   color: #fff;
-
-//  &:after {
-//    position: absolute;
-//  content: '';
-//  width: 90%;
-//  height: 1px;
-//  background: $dropMenuSeparator;
-//    top: 155%;
-//    left: -34px;
-//}
 
   &:hover {
     color: $lightAcсentColor;
@@ -118,7 +96,6 @@
 }
 
 .logo__picture {
-  //margin-left: 16px;
   display: flex;
   align-items: center;
 }
@@ -132,8 +109,7 @@
 .logo__company-name {
   display: none;
   font-family: Lato;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 16px;
   text-transform: uppercase;
@@ -156,9 +132,9 @@
 
 .menu {
   display: none;
-  width: 100%;
   justify-content: center;
   align-items: center;
+  width: 100%;
   gap: 47px;
 
   @media (min-width: $width-640) {
@@ -183,8 +159,7 @@
 .menu__item-link {
   color: $lightAcсentColor;
   font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 18px;
 
@@ -196,8 +171,7 @@
 .buy-now-button {
   display: block;
   font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 15px;
   line-height: 15px;
   align-self: center;
@@ -237,42 +211,23 @@
 }
 
 .drop-menu-button__link-container {
-display: block;
+  display: block;isplay: block;
 
   @media (min-width: $width-640) {
     display: none;
   }
 }
 
-//h1 {
-//  display: block;
-//  font-family: Montserrat;
-//  font-style: normal;
-//  font-weight: bold;
-//  font-size: 72px;
-//  line-height: 72px;
-//  color: #fff;
-//}
-
-//.title__container {
-//  position: absolute;
-//  top: 1000px;
-//  left: 30px;
-//}
-
 .title {
   display: inline-block;
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
+  @include block-center;
   top: 200px;
   left:50%;
   transform:translate(-50%);
   white-space: nowrap;
-
   font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 44px;
   line-height: 44px;
   color: #fff;
@@ -297,8 +252,7 @@ display: block;
   text-align: center;
   font-weight: 400;
   font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: $lightAcсentColor;
@@ -322,10 +276,8 @@ display: block;
   left:50%;
   transform:translate(-50%);
   white-space: nowrap;
+  font-family: Montserrat;;
   font-weight: 400;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   color: $basisGray;
@@ -354,7 +306,7 @@ display: block;
   font-weight: 700;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   color: #fff;
@@ -374,15 +326,13 @@ display: block;
 
 .trial-condition {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   display: block;
   margin-top: 42px;
   font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   color: $basisGray;
+  @include block-center;
 }
 
