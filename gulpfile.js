@@ -33,7 +33,6 @@ exports.default = series(
   jsProcessor.jsProcessor,
   svgProcessor.svgProcessor,
   htmlProcessor.htmlProcessor,
-  // parallel(serv.serv, watcher.watcher)
   serv.serv,
   watcher.watcher
 );
