@@ -1025,6 +1025,7 @@ a {
 }
 
 .pricing {
+  padding: 0 10px 0 10px;
   padding-left: 28px;
   padding-right: 28px;
   text-align: center;
@@ -1093,14 +1094,62 @@ a {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 768px) {
+  .pricing__container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .pricing__container {
+    width: 1200px;
+    margin: 0;
+  }
+}
 
 .price__item {
   height: 457px;
   width: 257px;
+  margin: 0px 12px 0 12px;
 }
+@media (min-width: 320px) {
+  .price__item:nth-child(2n) {
+    margin-top: 18px;
+  }
+}
+@media (min-width: 640px) {
+  .price__item:nth-child(2n) {
+    margin-top: 0px;
+  }
+  .price__item:nth-child(4n) {
+    margin-top: 0px;
+    margin-left: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .price__item:nth-child(4n) {
+    margin-left: 10px;
+  }
+}
+
 .price__item-accent {
   width: 299px;
   height: 560px;
+}
+@media (min-width: 320px) {
+  .price__item-accent {
+    margin-top: 18px;
+  }
+}
+@media (min-width: 640px) {
+  .price__item-accent {
+    margin-left: -30px;
+  }
+}
+@media (min-width: 1200px) {
+  .price__item-accent {
+    margin: 0 10px;
+  }
 }
 
 .pricing__body {
@@ -1316,6 +1365,7 @@ a {
   src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
 }
 .pricing {
+  padding: 0 10px 0 10px;
   padding-left: 28px;
   padding-right: 28px;
   text-align: center;
@@ -1384,14 +1434,62 @@ a {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 768px) {
+  .pricing__container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .pricing__container {
+    width: 1200px;
+    margin: 0;
+  }
+}
 
 .price__item {
   height: 457px;
   width: 257px;
+  margin: 0px 12px 0 12px;
 }
+@media (min-width: 320px) {
+  .price__item:nth-child(2n) {
+    margin-top: 18px;
+  }
+}
+@media (min-width: 640px) {
+  .price__item:nth-child(2n) {
+    margin-top: 0px;
+  }
+  .price__item:nth-child(4n) {
+    margin-top: 0px;
+    margin-left: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .price__item:nth-child(4n) {
+    margin-left: 10px;
+  }
+}
+
 .price__item-accent {
   width: 299px;
   height: 560px;
+}
+@media (min-width: 320px) {
+  .price__item-accent {
+    margin-top: 18px;
+  }
+}
+@media (min-width: 640px) {
+  .price__item-accent {
+    margin-left: -30px;
+  }
+}
+@media (min-width: 1200px) {
+  .price__item-accent {
+    margin: 0 10px;
+  }
 }
 
 .pricing__body {
