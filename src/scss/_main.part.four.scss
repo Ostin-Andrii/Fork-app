@@ -7,14 +7,16 @@
     text-align: center;
     background-color: $pricingBackground;
     height: 2189px;
-    // background-image: url(../img/background_about_us_second.jpg);
 
     @media (min-width: $width-640) {
         height: 1319px;
+        background-image: url(/src/img/background_subs_768px.png);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     @media (min-width: $width-768) {
-        background-image: url(/src/img/background_subs_768px.png);
+
         padding: 0px;
         overflow: hidden;
         height: 1319px;
@@ -66,6 +68,16 @@
     align-items: center;
     justify-content: center;
 
+    @media (min-width: $width-576) {
+        width: 476px;
+        margin: 0 auto;
+    }
+
+    @media (min-width: $width-640) {
+        width: 620px;
+    }
+
+
     @media (min-width: $width-768) {
         width: 768px;
         margin: 0 auto;
@@ -104,21 +116,7 @@
             margin-left: 10px;
         }
     }
-
-
 }
-
-
-
-
-    // @media (min-width: $width-576) {
-    //     &:nth-child(2n) {
-    //         margin-left: 25px;
-    //     }
-    // }
-    // @media (min-width: $width-1200) {
-
-    // }
 
 .price__item-accent{
     width: 299px;
@@ -135,8 +133,6 @@
     @media (min-width: $width-1200) {
         margin: 0 10px;
     }
-
-
 }
 
 .pricing__body {
@@ -161,7 +157,6 @@
     text-align: center;
     height: 257px;
     height: 97px;
-    // width: 100%;
     color: #fff;
     font-family: Montserrat;
     font-style: normal;
@@ -329,7 +324,6 @@
 }
 
 .price__purchase-button-accent {
-   
     display: inline-block;
     background-color: $pricePurchaseButtonAccent;
     color: #fff;
