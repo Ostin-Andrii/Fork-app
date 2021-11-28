@@ -1,25 +1,28 @@
 @import "variables";
 
 .pricing {
+    padding: 0 10px 0 10px;
     padding-left: 28px;
     padding-right: 28px;
     text-align: center;
     background-color: $pricingBackground;
     height: 2189px;
-    // background-image: url(../img/background_about_us_second.jpg);
 
     @media (min-width: $width-640) {
         height: 1319px;
+        background-image: url(/src/img/background_subs_768px.png);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     @media (min-width: $width-768) {
-        background-image: url(/src/img/background_subs_768px.png);
+
         padding: 0px;
         overflow: hidden;
         height: 1319px;
     }
 
-    @media (min-width: $width-1200) {
+    @media (min-width: $width-992) {
         height: 800px;
     }
 }
@@ -64,25 +67,98 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: $width-576) {
+        width: 476px;
+        margin: 0 auto;
+    }
+
+    @media (min-width: $width-640) {
+        width: 620px;
+    }
+
+
+    @media (min-width: $width-768) {
+        width: 768px;
+        margin: 0 auto;
+    }
+
+    @media (min-width: $width-992) {
+        width: 973px;
+    }
+
+
+    @media (min-width: $width-1200) {
+        width: 1200px;
+        margin: 0;
+    }
 }
 
 .price__item {
-    height: 457px;
     width: 257px;
+    height: 457px;
+    margin: 0px 12px 0 12px;
+
+    @media (min-width: $width-320) {
+        &:nth-child(2n) {
+            margin-top: 18px;
+        }
+    }
+
+    @media (min-width: $width-640) {
+        &:nth-child(2n) {
+            margin-top: 0px;
+        }
+
+        &:nth-child(4n) {
+            margin-top: 0px;
+            margin-left: 24px;
+        }
+    }   
+
+    @media (min-width: $width-992) {
+        width: 205px;
+        height: 457px;
+    }
+
 
     @media (min-width: $width-1200) {
+        width: 257px;
 
+        &:nth-child(4n) {
+            margin-left: 10px;
+        }
     }
 }
 
 .price__item-accent{
     width: 299px;
     height: 560px;
+
+    @media (min-width: $width-320) {
+        margin-top: 18px;
+    }
+
+    @media (min-width: $width-640) {
+        margin-left: -30px;
+    }
+
+    @media (min-width: $width-992) {
+        width: 245px;
+        height: 457px;
+        margin: 0 10px;
+    }
+
+    @media (min-width: $width-1200) {
+        width: 299px;
+        height: 560px;
+    }
 }
 
 .pricing__body {
     height: 360px;
     background-color: $pricingItemBackground;
+
     @media (min-width: $width-768) {
         background-color: rgba(95, 81, 97, 0.41);
         mix-blend-mode: normal;
@@ -92,6 +168,11 @@
 .pricing__body-accent {
     height: 449px;
     background-color: $pricingItemBackgroundAccent;
+
+    @media (min-width: $width-992) {
+        height: 400px;
+    }
+
 }
 
 .price__header {
@@ -102,7 +183,6 @@
     text-align: center;
     height: 257px;
     height: 97px;
-    // width: 100%;
     color: #fff;
     font-family: Montserrat;
     font-style: normal;
@@ -127,6 +207,14 @@
     font-size: 24px;
     line-height: 24px;
     background-color: $picingItemHeaderBeckgroundAccent;
+
+    @media (min-width: $width-992) {
+        width: 245px;
+    }
+
+    @media (min-width: $width-1200) {
+        width: 299px;
+    }
 }
 
 .price__price-accent {
@@ -149,6 +237,16 @@
         content: '$';
         font-weight: 300;
     }
+
+    @media (min-width: $width-992) {
+        width: 245px;
+    }
+
+    @media (min-width: $width-1200) {
+        width: 299px;
+    }
+
+
 }
 
 .price__price {
@@ -270,7 +368,6 @@
 }
 
 .price__purchase-button-accent {
-   
     display: inline-block;
     background-color: $pricePurchaseButtonAccent;
     color: #fff;
