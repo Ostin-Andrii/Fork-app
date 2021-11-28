@@ -31,7 +31,10 @@
   text-align: center;
 
   @media (min-width: $width-740) {
-  background-image: none;
+    height: 140px;
+  }
+
+  @media (min-width: $width-768) {
     height: 0px;
   }
 }
@@ -201,7 +204,7 @@
     }
   }
 
-  @media (min-width: $width-640) {
+  @media (min-width: $width-740) {
     max-width: 560px;
 
     &:after{
