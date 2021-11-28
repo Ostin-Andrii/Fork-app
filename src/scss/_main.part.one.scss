@@ -43,6 +43,10 @@
   width: 292px;
 }
 
+.nav__hidden {
+  display: none;
+}
+
 .nav__drop-menu-item {
   background: $dropMenuBackground;
   height: 100%;
